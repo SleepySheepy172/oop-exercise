@@ -44,10 +44,6 @@ public class Goat extends Animal{
         this.tinCansEatenPerMinute = tinCansEatenPerMinute;
     }
 
-    private void printTinCansEatenPerMinute(){
-        System.out.println("The tins eaten per minute by a " + getClass() + " is " + tinCansEatenPerMinute);
-    }
-
     public void printTinCansEatenPerMinute(){
         System.out.println("The tins eaten per minute by a " + getClass() + " is " + tinCansEatenPerMinute);
     }

@@ -44,10 +44,6 @@ public class Lion extends Animal{
         this.napsTakenPerDay = napsTakenPerDay;
     }
 
-    private void printNapsTakenPerDay(){
-        System.out.println("The average number of naps taken per day by a " + getClass() + " is " + napsTakenPerDay);
-    }
-
     public void printAverageBeakSize(){
         System.out.println("The average number of naps taken per day by a " + getClass() + " is " + napsTakenPerDay);
     }

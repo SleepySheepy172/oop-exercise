@@ -44,10 +44,6 @@ public class Wolf extends Animal{
         this.runningSpeed = runningSpeed;
     }
 
-    private void printRunningSpeed(){
-        System.out.println("The average running speed of a " + getClass() + " is " + runningSpeed);
-    }
-
     public void printRunningSpeed(){
         System.out.println("The average running speed of a " + getClass() + " is " + runningSpeed);
     }
