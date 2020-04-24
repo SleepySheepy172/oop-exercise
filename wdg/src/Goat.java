@@ -7,7 +7,7 @@ public class Goat extends Animal{
 
     protected Goat(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int tinCansEatenPerMinute) {
         super(name, gender, age, lifespan, canEat, foodStore);
-        this.tinCansEatenPerMinute = tinCansEatenPerMinute;
+        //initialise tin cans eaten per minute
     }
 
     @Override
@@ -21,30 +21,26 @@ public class Goat extends Animal{
     }
     @Override
     void move(int steps) {
-        System.out.println(getName() + " has taken " + steps + " steps!");
+        //add print statement for number of steps goat has taken
 
     }
 
     @Override
     void makeSound() {
-        System.out.println("bleat bleat");
+        //add print statement with the sound a goat makes (apparently it bleats)
 
     }
 
     @Override
     void reproduce() {
-        System.out.println("One kid made ... (mini bleat)");
+        //add print statement saying one baby goat kid produced
     }
 
-    public int getTinCansEatenPerMinute(){
-        return tinCansEatenPerMinute;
-    }
+    //add getter for tin cans eaten per minute
 
-    public void setTinCansEatenPerMinute(int tinCansEatenPerMinute){
-        this.tinCansEatenPerMinute = tinCansEatenPerMinute;
-    }
+    //add setter for tin cans eaten per minute
 
     public void printTinCansEatenPerMinute(){
-        System.out.println("The tins eaten per minute by a " + getClass() + " is " + getTinCansEatenPerMinute());
+        //add print statement for the number of tin cans eaten per day
     }
 }
