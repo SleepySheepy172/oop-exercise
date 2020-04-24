@@ -5,7 +5,7 @@ public class Wolf extends Animal{
 
     private int runningSpeed;
 
-    protected Penguin(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int runningSpeed) {
+    protected Wolf(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int runningSpeed) {
         super(name, gender, age, lifespan, canEat, foodStore);
         this.runningSpeed = runningSpeed;
     }
@@ -45,6 +45,6 @@ public class Wolf extends Animal{
     }
 
     public void printRunningSpeed(){
-        System.out.println("The average running speed of a " + getClass() + " is " + runningSpeed);
+        System.out.println("The average running speed of a " + getClass() + " is " + getRunningSpeed());
     }
 }

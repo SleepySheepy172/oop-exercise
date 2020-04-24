@@ -5,7 +5,7 @@ public class Lion extends Animal{
 
     private int napsTakenPerDay;
 
-    protected Penguin(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int napsTakenPerDay) {
+    protected Lion(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int napsTakenPerDay) {
         super(name, gender, age, lifespan, canEat, foodStore);
         this.napsTakenPerDay = napsTakenPerDay;
     }
@@ -45,6 +45,6 @@ public class Lion extends Animal{
     }
 
     public void printAverageBeakSize(){
-        System.out.println("The average number of naps taken per day by a " + getClass() + " is " + napsTakenPerDay);
+        System.out.println("The average number of naps taken per day by a " + getClass() + " is " + getNapsTakenPerDay());
     }
 }

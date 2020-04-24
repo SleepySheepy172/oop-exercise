@@ -5,7 +5,7 @@ public class Giraffe extends Animal{
 
     private int treesBumpedInto;
 
-    protected Penguin(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int treesBumpedInto) {
+    protected Giraffe(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int treesBumpedInto) {
         super(name, gender, age, lifespan, canEat, foodStore);
         this.treesBumpedInto = treesBumpedInto;
     }
@@ -45,7 +45,7 @@ public class Giraffe extends Animal{
     }
 
     public void printTreesBumpedInto(){
-        System.out.println("The average number trees bumped into every day by a " + getClass() + " is " + napsTakenPerDay);
+        System.out.println("The average number trees bumped into every day by a " + getClass() + " is " + getTreesBumpedInto());
     }
 
 }

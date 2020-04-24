@@ -5,7 +5,7 @@ public class Goat extends Animal{
 
     private int tinCansEatenPerMinute;
 
-    protected Penguin(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int tinCansEatenPerMinute) {
+    protected Goat(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int tinCansEatenPerMinute) {
         super(name, gender, age, lifespan, canEat, foodStore);
         this.tinCansEatenPerMinute = tinCansEatenPerMinute;
     }
@@ -37,7 +37,7 @@ public class Goat extends Animal{
     }
 
     public int getTinCansEatenPerMinute(){
-        return runningSpeed;
+        return tinCansEatenPerMinute;
     }
 
     public void setTinCansEatenPerMinute(int tinCansEatenPerMinute){
@@ -45,6 +45,6 @@ public class Goat extends Animal{
     }
 
     public void printTinCansEatenPerMinute(){
-        System.out.println("The tins eaten per minute by a " + getClass() + " is " + tinCansEatenPerMinute);
+        System.out.println("The tins eaten per minute by a " + getClass() + " is " + getTinCansEatenPerMinute());
     }
 }

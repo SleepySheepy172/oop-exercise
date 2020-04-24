@@ -45,6 +45,6 @@ public class Penguin extends Animal{
     }
 
     public void printAverageBeakSize(){
-        System.out.println("The average beaksize of a " + getClass() + " is " + beakSize);
+        System.out.println("The average beaksize of a " + getClass() + " is " + getBeakSize());
     }
 }
