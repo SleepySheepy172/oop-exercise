@@ -7,7 +7,7 @@ public class Lion extends Animal{
 
     protected Lion(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int napsTakenPerDay) {
         super(name, gender, age, lifespan, canEat, foodStore);
-        this.napsTakenPerDay = napsTakenPerDay;
+        //initialise naps taken per day
     }
 
     @Override
@@ -21,30 +21,26 @@ public class Lion extends Animal{
     }
     @Override
     void move(int steps) {
-        System.out.println(getName() + " has taken " + steps + " steps!");
+        //print statements for the number of steps taken per day
 
     }
 
     @Override
     void makeSound() {
-        System.out.println("rawr");
+        //print statement for noise that lion makes
 
     }
 
     @Override
     void reproduce() {
-        System.out.println("One baby lion cub made ... (mini rawr)");
+        //print statement saying one lion cub has been produced
     }
 
-    public int getNapsTakenPerDay(){
-        return napsTakenPerDay;
-    }
+    //add getter for naps taken per day
 
-    public void setNapsTakenPerDay(int napsTakenPerDay){
-        this.napsTakenPerDay = napsTakenPerDay;
-    }
+    //add setter for naps taken per day
 
-    public void printAverageBeakSize(){
-        System.out.println("The average number of naps taken per day by a " + getClass() + " is " + getNapsTakenPerDay());
+    public void printAverageNumberOfNapsTakenPerDay(){
+        //print statement for average number of naps taken per day
     }
 }
