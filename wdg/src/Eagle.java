@@ -7,7 +7,7 @@ public class Eagle extends Animal {
 
 	protected Eagle(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int wingSpan) {
 		super(name, gender, age, lifespan, canEat, foodStore);
-		this.wingSpan = wingSpan;
+		//initialise wingspan in constructor
 	}
 
 	@Override
@@ -15,6 +15,7 @@ public class Eagle extends Animal {
 		if(getCanEat().contains(food)){
 			int numFoodItem = getFoodStore().get(food);
 			getFoodStore().put(food, numFoodItem-amount);
+			System.out.println(getName() + " has eaten " + food);
 		} else {
 			System.out.println(getName() + " can't eat " + food + "! They're an " + getClass());
 		}
@@ -22,28 +23,24 @@ public class Eagle extends Animal {
 
 	@Override
 	void move(int steps) {
-		System.out.println(getName() + " has taken " + steps + " steps!");
+		//add print statement for number of steps eagle takes
 	}
 
 	@Override
 	void makeSound() {
-		System.out.println("eeeeeeeee");
+		//add print statement for sound that eagle makes (apparently its a high pitched sound like eeeee)
 	}
 
 	@Override
 	void reproduce() {
-		System.out.println("One baby eaglet made ... (*sleeping*)");
+		//add print statment showing that a baby eagle(eaglet has been made)
 	}
 
-	public int getWingSpan(){
-		return wingSpan;
-	}
+	//add getter for wingspan
 
-	public void setWingSpan(int treesBumpedInto){
-		this.wingSpan = wingSpan;
-	}
+	//add setter for wingspan
 
 	public void printWingSpan(){
-		System.out.println("The average number trees bumped into every day by a " + getClass() + " is " + getWingSpan());
+		//add print statement for eagle wingspan
 	}
 }
