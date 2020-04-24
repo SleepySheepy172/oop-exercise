@@ -9,7 +9,7 @@ public class Main {
 		List<String> canEat = new ArrayList<>();
 		canEat.add("tin cans");
 		canEat.add("hay");
-		canEat.add("corn")
+		canEat.add("corn");
 
 		Map<String, Integer> foodStore = new HashMap<>();
 		foodStore.put("hay", 1000);
