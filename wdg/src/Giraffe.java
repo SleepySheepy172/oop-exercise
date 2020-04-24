@@ -7,7 +7,7 @@ public class Giraffe extends Animal{
 
     protected Giraffe(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int treesBumpedInto) {
         super(name, gender, age, lifespan, canEat, foodStore);
-        this.treesBumpedInto = treesBumpedInto;
+        //initialise treesbumpedinto
     }
 
     @Override
@@ -21,31 +21,27 @@ public class Giraffe extends Animal{
     }
     @Override
     void move(int steps) {
-        System.out.println(getName() + " has taken " + steps + " steps!");
-
+        //print statement with how many steps giraffe took
     }
 
     @Override
     void makeSound() {
-        System.out.println("hummm");
+        //print statement with the noise a giraffe makes (apparently its a low humming noise)
 
     }
 
     @Override
     void reproduce() {
-        System.out.println("One baby giraffe calf made ... (*sleeping*)");
+        //print statement that says one baby giraffe has been brought into the world
     }
 
-    public int getTreesBumpedInto(){
-        return treesBumpedInto;
-    }
+    //add getter for number of trees bumped into
 
-    public void setTreesBumpedInto(int treesBumpedInto){
-        this.treesBumpedInto = treesBumpedInto;
-    }
+    //add setter for number of trees bumped into
+
 
     public void printTreesBumpedInto(){
-        System.out.println("The average number trees bumped into every day by a " + getClass() + " is " + getTreesBumpedInto());
+        //print statement with number of trees giraffe has bumped into per day
     }
 
 }
