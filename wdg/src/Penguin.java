@@ -7,7 +7,7 @@ public class Penguin extends Animal{
 
     protected Penguin(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int beakSize) {
         super(name, gender, age, lifespan, canEat, foodStore);
-        this.beakSize = beakSize;
+        //initialise beak size
     }
 
     @Override
@@ -21,30 +21,25 @@ public class Penguin extends Animal{
     }
     @Override
     void move(int steps) {
-        System.out.println(getName() + " has taken " + steps + " steps!");
-
+        //print statement for number of steps taken
     }
 
     @Override
     void makeSound() {
-        System.out.println("noot noot");
+        //print statement for sound penguin makes (apparently its noot noot)
 
     }
 
     @Override
     void reproduce() {
-        System.out.println("One baby penguin chick made ... squawk sqawk noot noot");
+        //print statement for one baby penguine chick made
     }
 
-    public int getBeakSize(){
-        return beakSize;
-    }
+    //add getter for beaksize
 
-    public void setBeakSize(int beakSize){
-        this.beakSize = beakSize;
-    }
+    //add setter for beaksize
 
     public void printAverageBeakSize(){
-        System.out.println("The average beaksize of a " + getClass() + " is " + getBeakSize());
+        //print statement for average beaksize
     }
 }
