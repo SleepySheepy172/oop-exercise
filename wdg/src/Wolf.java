@@ -7,7 +7,7 @@ public class Wolf extends Animal{
 
     protected Wolf(String name, String gender, int age, int lifespan, List<String> canEat, Map<String, Integer> foodStore, int runningSpeed) {
         super(name, gender, age, lifespan, canEat, foodStore);
-        this.runningSpeed = runningSpeed;
+        //initialise running speed
     }
 
     @Override
@@ -21,30 +21,26 @@ public class Wolf extends Animal{
     }
     @Override
     void move(int steps) {
-        System.out.println(getName() + " has taken " + steps + " steps!");
+        //print statement for number of steps wolf takes
 
     }
 
     @Override
     void makeSound() {
-        System.out.println("awooooo");
+        //print statement for noise wolf makes
 
     }
 
     @Override
     void reproduce() {
-        System.out.println("One wolf pup made ... (mini awoo)");
+        //print statement saying one baby wolf has been made
     }
 
-    public int getRunningSpeed(){
-        return runningSpeed;
-    }
+    //add getter for running speed
 
-    public void setRunningSpeed(int runningSpeed){
-        this.runningSpeed = runningSpeed;
-    }
+    //add setter for running speed
 
     public void printRunningSpeed(){
-        System.out.println("The average running speed of a " + getClass() + " is " + getRunningSpeed());
+        //print statement for average running speed
     }
 }
