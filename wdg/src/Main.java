@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -5,12 +10,12 @@ public class Main {
 		canEat.add("fish");
 		canEat.add("meat");
 
-		Map<String, Integer>foodStore = new HashMap<>();
+		Map<String, Integer> foodStore = new HashMap<>();
 		foodStore.put("fish", 80);
 		foodStore.put("meat", 20);
 
 
 		Lion leo = new Lion("Leo", "m", 2, 5, canEat, foodStore, 25);
-		gerald.eat(1, "fish");
+		leo.eat(1, "fish");
 	}
 }
